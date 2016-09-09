@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+  <style>
+    form {
+      padding: 10px 10px 10px 10px;
+      width: 50%;
+    }
+
+    fieldset {   
+  -moz-border-radius:5px;  
+  border-radius: 5px;  
+  -webkit-border-radius: 5px; 
+    }
+
+    #message_cont {
+      margin-bottom: 10px;
+    }
+
+.lables {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.inputs {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+  </style>
+
+  </head>
+  <body>
+    <form action="/some-form-handling-page" method="post">
+      <fieldset>
+        <dl>
+          <dt><label for="name">Name:</label></dt>
+          <dd><input type="text" id="name" name="name" required /></dd>
+          <dt><label for="email">Email:</label></dt>
+          <dd><input type="email" id="email" name="email" required /></dd>
+          <dt><label for="phone_number">Phone:</label></dt>
+          <dd><input type="tel" id="phone" name="phone" /></dd>
+          <dt><label for="message">Message:</label></dt>
+          <dd id="message_cont"><textarea rows="6" cols="80" name="message" id="message"></textarea></dd>
+          </dl>
+        <div class="button">
+          <input type="submit" value="Send Message" />
+          <input type="reset" value="Clear" />
+        </div>      
+      </fieldset>
+    </form>
+
+<hr>
+
+
+<h2>Exercise 2</h2>
+
+<form id="ex2">
+  <fieldset>
+    <dl>
+      <dt class="lables"><label for="search_for">Search for:</label></dt>
+      <dd class="inputs"><input type="text" id="search" name="search" /></dd>
+      <dt class="lables"><input type="radio" /></dt>
+      <dd class="inputs"><label for="radio_button_tv">TV</label></dd>
+      <dt class="lables"><input type="radio" /></dt>
+      <dd class="inputs"><label for="radio_button_movies">Movies</label></dd>
+      <dt class="lables"><input type="radio" /></dt>
+      <dd class="inputs"><label for="radio_button_music">Music</label></dd>
+      <button>Search</button>
+    </dl>
+  </fieldset>
+</form>
+
+<hr>
+
+<h2>Exercise 3</h2>
+
+<form action="/url" method="post">
+  <fieldset>
+    <dl>
+      <dt><label for="title">Movie</label></dt>
+      <dd>
+        <select name="title" id="title">
+          <option value="Tommy Boy">Tommy Boy</option>
+          <option value="Frozen">Frozen</option>
+          <option value="Looper">Looper</option>
+        </select>
+      </dd>
+      <dt><label for="rating">Rating</label></dt>
+      <dd>
+        <input type="range" name="rating" id="rating" min="1" max="5" step="1" />
+      </dd>
+      </dl>
+      <div>
+      <label><input type="checkbox" name="favorite" checked />Add to my favorites</label>
+      </div>
+      <input type="submit" value="Rate movie" />
+  </fieldset>
+</form>
+
+
+
+
+
+
+
+
+  </body>
+</html> 
+
+
+
+
+
+
+
+
