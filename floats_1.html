@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+  
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Lucida Grande">
+
+
+
+
+
+    <style>
+      
+      body {
+        background-color: white;
+        font-family: 'Lucida Grande', serif;
+      }
+
+      section {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        /*border: 1px solid blue;*/
+        /*overflow: hidden;*/
+      }
+
+      header {
+        width: 30%;
+        float: left;
+        background: #42444e;
+        color: white;
+        height: 1200px;       
+      }
+
+      h1 {
+        padding-left: 25px;
+        font-family: 'Lucida Grande', serif;
+        font-size: 36px;
+        font-weight: 200;
+      }
+
+      #ad_box {
+        height: 150px;
+        width: 100px;
+        background: rgb(234, 234, 237);
+      }
+
+      h2 {
+        text-align: center;
+        padding-top: 50px;
+      }
+
+      span {
+        font-family: arial;
+        font-size: .32em;
+        margin-left: 8px;
+        text-transform: uppercase;
+      }
+
+      article {
+        float: left;
+        width: 55%;
+        /*border: 1px solid #000;*/ 
+        background: #ffffff;
+        padding-right: 30px;
+        box-sizing: border-box;
+        height: 1200px;
+        margin-left: 30px
+      }
+
+      aside {
+        width: 15%;
+        float: right;
+        overflow: hidden;
+        background: #ffffff;      
+        }
+
+      footer {
+        clear: both;
+        max-width: 1200px;
+        background: white;
+        margin: 0 auto;
+        background: rgb(234, 234, 237);
+      }
+
+    
+
+    </style>
+
+
+  </head>
+  <body>
+
+    <section>
+      
+      <header>
+        <h1>Press Release<span>Builder</span></h1>  
+      </header>
+        
+      <article>
+        <h2>Write Your Best Press Release</h2>
+        
+        <form action="/some-form-handling-page" method="post">
+      <fieldset>
+        <dl>
+          <dt><label for="name">Name:</label></dt>
+          <dd><input type="text" id="name" name="name" required /></dd>
+          <dt><label for="email">Email:</label></dt>
+          <dd><input type="email" id="email" name="email" required /></dd>
+          <dt><label for="phone_number">Phone:</label></dt>
+          <dd><input type="tel" id="phone" name="phone" /></dd>
+          <dt><label for="message">Message:</label></dt>
+          <dd id="message_cont"><textarea rows="6" cols="80" name="message" id="message"></textarea></dd>
+          </dl>
+        <div class="button">
+          <input type="submit" value="Send Message" />
+          <input type="reset" value="Clear" />
+        </div>      
+      </fieldset>
+    </form>
+
+      </article>
+      <aside>
+        <p>yo</p>
+        <div id="ad_box"></div>
+      </aside>
+    </section>
+
+    <footer>
+      <h2>The Footer</h2>
+    </footer>
+
+  </body>
+</html> 

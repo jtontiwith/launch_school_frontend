@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+  
+    <style>
+      label, select {
+        display: block;
+      }
+    </style>
+
+
+  </head>
+  <body>
+
+  <form method="post" action="/somepage">
+    <label>
+      <span>First Name:</span>
+      <input type="text" name="first_name" required />
+    </label>
+    <label>
+      <span>Last Name:</span>
+      <input type="text" name="last_name" required />
+    </label>
+    <label>
+      <span>Email Address:</span>
+      <input type="email" name="email" autocomplete="off" autocapitalization="off" autocorrect="off" reqired />
+    </label>
+    <label>
+      <span>Phone Number:</span>      
+      <input type="tel" name="telephone" required />
+    </label>
+  
+    <label>
+      <span>Phone Type:</span>
+      <select name="phone_type">
+        <option value="home" selected>home</option>
+        <option value="business">business</option>
+        <option value="mobile">mobile</option>
+      </option>
+    </label>
+
+
+  </form>
+
+<!--in the book they use definition lists, it's too much and you
+only need the id if the input is not inside the label--> 
+
+<h1>Filtering News</h1>
+
+<form action="" method="get">
+  <fieldset>
+    <label>
+      <input type="radio" name="category" value="Core" />
+      Core
+    </label>  
+    <label>
+      <input type="radio" name="category" value="Plugins and Libraries" />
+      Plugins and Libraries
+    </label>
+    <label>
+      <input type="radio" name="category" value="Conventions" />
+      Conventions
+    </label>    
+    <label>
+      <input type="radio" name="category" value="Reviews" />
+      Reviews
+    </label>  
+    <label>
+      <input type="radio" name="category" value="Opinion" />
+      Opinion
+    </label>
+    <label>  
+      <input type="radio" name="category" value="People" />
+      People
+    </label>
+  </fieldset>
+</form>
+
+<h1>Tags</h1>
+
+<form action="" method="get">
+  <fieldset>
+    <ul>
+      <li><label><input type="checkbox" name="HTML">HTML</label></li>
+      <li><label><input type="checkbox" name="CSS">CSS</label></li>
+      <li><label><input type="checkbox" name="Javascript">Javascript</label></li>
+      <li><label><input type="checkbox" name="Ruby">Ruby</label></li>
+      <li><label><input type="checkbox" name="Rails">Rails</label></li>
+      <li><label><input type="checkbox" name="Python">Python</label></li>
+      <li><label><input type="checkbox" name="Django">Django</label></li>
+    </ul>
+    <input type="submit" value="Filter">
+  </fieldset>
+</form>
+
+<h1>4</h1>
+<form action="" method="get">
+  <fieldset>
+    <label for="category">Category</label>
+      <select name="category">
+        <option>Core</option>
+        <option>Plugins and Libraries</option>
+        <option>Conventions</option>
+        <option>Reviews</option>
+        <option>Opinion</option>
+        <option>People</option>
+      </select>
+    <label for="tags">Tags</label>
+      <select name="tags" multiple>  
+        <option value="html">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="Javascript">Javascript</option>
+        <option value="Ruby">Ruby</option>
+        <option value="Rails">Rails</option>
+        <option value="Python">Python</option>
+        <option value="Django">Django</option>
+      </select>
+  <input type="submit" value="Filter" />
+  <input type="reset" value="reset" />
+  </fieldset>
+</form>
+
+
+
+
+
+
+  </body>
+</html> 
